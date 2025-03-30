@@ -1,0 +1,36 @@
+{
+  "name": "Eden-lang-ext",
+  "displayName": "Eden",
+  "description": "Syntax highlighting for Eden",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "eden",
+      "aliases": ["Eden", "eden"],
+      "extensions": [".eden"],
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "light": "assets/logo.png",
+        "dark": "assets/logo.png"
+      }
+    }],
+    "themes": [
+      {
+        "label": "Eden Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/eden-color-theme.json"
+      }
+    ],
+    "grammars": [{
+      "language": "eden",
+      "scopeName": "source.eden",
+      "path": "./syntaxes/eden.tmLanguage.json"
+    }]
+  }
+}

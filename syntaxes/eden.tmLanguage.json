@@ -1,0 +1,139 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Eden",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#types"
+		},
+		{
+			"include": "#functions"
+		},
+		{
+			"include": "#literals"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#lists"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.double-slash.eden",
+					"match": "//.*"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.eden",
+					"match": "\\b(Function|Var|Loop|If|Else|Return|List|Sisyphus|Quit|Skip)\\b"
+				}
+			]
+		},
+		"types": {
+			"patterns": [
+				{
+					"name": "storage.type.eden",
+					"match": "\\b(Int|Float|Char|String|None|Bool|Null)\\b"
+				}
+			]
+		},
+		"functions": {
+			"patterns": [
+				{
+					"name": "entity.name.function.eden",
+					"match": "\\b[A-Za-z_][A-Za-z0-9_]*\\b(?=\\s*\\()"
+				}
+			]
+		},
+		"literals": {
+			"patterns": [
+				{
+					"name": "constant.numeric.integer.eden",
+					"match": "\\b[0-9]+(i)\\b"
+				},
+				{
+					"name": "constant.numeric.float.eden",
+					"match": "\\b[0-9]*\\.?[0-9]+f\\b"
+				  },
+				{
+					"name": "constant.character.eden",
+					"match": "('[^']*')|(\\b[0-9]+(c)\\b)"
+				},
+				{
+					"name": "constant.language.boolean.eden",
+					"match": "\\b(True|False)\\b"
+				}
+			]
+		},
+		"operators": {
+			"patterns": [
+				{
+					"name": "keyword.operator.eden",
+					"match": "[+\\-*/=<>!\\.\\&\\|%]+"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.eden",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.eden",
+					"match": "\\\\."
+				}
+			]
+		},
+		"variables": {
+			"patterns": [
+				{
+					"name": "variable.other.eden",
+					"match": "\\b[A-Za-z_][A-Za-z0-9_]*\\b(?=\\s*(;|\\)|\\s*=|\\[|[+\\-*/%&|!<>]|\\.))"
+				},
+				{
+					"name": "variable.other.index.eden",
+					"match": "\\b[A-Za-z_][A-Za-z0-9_]*\\b(?=\\])"
+				}
+			]
+		},
+		"lists": {
+			"patterns": [
+				{
+					"name": "constant.other.list.eden",
+					"begin": "\\[",
+					"end": "\\]",
+					"patterns": [
+						{
+							"include": "#variables"
+						},
+						{
+							"include": "#literals"
+						},
+						{
+							"include": "#strings"
+						}
+					]
+				}
+			]
+		}
+	},
+	"scopeName": "source.eden"
+}

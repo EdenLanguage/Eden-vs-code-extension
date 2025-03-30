@@ -1,0 +1,106 @@
+{
+    "name": "Eden Theme",
+    "type": "dark",
+    "colors": {
+        "editor.background": "#1e1e1e",
+        "editor.foreground": "#d4d4d4",
+        "editor.selectionBackground": "#264f78",
+        "editor.lineHighlightBackground": "#2a2d2e"
+    },
+    "tokenColors": [
+        {
+            "scope": "constant.numeric.integer.eden",
+            "settings": {
+                "foreground": "#C79AE4"
+            }
+        },
+        {
+            "scope": "constant.numeric.float.eden",
+            "settings": {
+                "foreground": "#F2B3BE"
+            }
+        },
+        {
+            "scope": "constant.character.eden",
+            "settings": {
+                "foreground": "#758a03"
+            }
+        },
+        {
+            "scope": "constant.language.boolean.eden",
+            "settings": {
+                "foreground": "#758a03"
+            }
+        },
+        {
+            "scope": "keyword.control.eden",
+            "settings": {
+                "foreground": "#758a03",
+            }
+        },
+        {
+            "scope": "storage.type.eden",
+            "settings": {
+                "foreground": "#569CD6",
+            }
+        },
+        {
+            "scope": "entity.name.function.eden",
+            "settings": {
+                "foreground": "#FCFC80"
+            }
+        },
+        {
+            "scope": "constant.numeric.eden",
+            "settings": {
+                "foreground": "#B5CEA8"
+            }
+        },
+        {
+            "scope": "constant.language.boolean.eden",
+            "settings": {
+                "foreground": "#016dc5",
+                "fontStyle": "underline"
+            }
+        },
+        {
+            "scope": "variable.other.eden",
+            "settings": {
+                "foreground": "#9CDCFE",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "scope": "variable.other.index.eden",
+            "settings": {
+                "foreground": "#9CDCFE",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "scope": "keyword.operator.eden",
+            "settings": {
+                "foreground": "#ffffff"
+            }
+        },
+        {
+            "scope": "string.quoted.double.eden",
+            "settings": {
+                "foreground": "#EB7C33"
+            }
+        },
+        {
+            "scope": "constant.character.eden",
+            "settings": {
+                "foreground": "#EE9458"
+            }
+        },
+        {
+            "scope": "comment.line.double-slash.eden",
+            "settings": {
+                "foreground": "#6A9955",
+                "fontStyle": "italic"
+            }
+        }
+    ]
+}
