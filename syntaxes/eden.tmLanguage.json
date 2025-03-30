@@ -34,10 +34,20 @@
 		"comments": {
 			"patterns": [
 				{
-					"name": "comment.line.double-slash.eden",
-					"match": "//.*"
+				  "name": "comment.line.double-slash.eden",
+				  "match": "//.*"
+				},
+				{
+				  "name": "comment.block.eden",
+				  "begin": "/\\*",
+				  "end": "\\*/",
+				  "captures": {
+					"0": {
+					  "name": "comment.block.eden"
+					}
+				  }
 				}
-			]
+			  ]
 		},
 		"keywords": {
 			"patterns": [

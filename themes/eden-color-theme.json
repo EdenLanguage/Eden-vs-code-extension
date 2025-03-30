@@ -101,6 +101,13 @@
                 "foreground": "#6A9955",
                 "fontStyle": "italic"
             }
+        },
+        {
+            "scope": "comment.block.eden",
+            "settings": {
+                "foreground": "#6A9955",
+                "fontStyle": "italic"
+            }
         }
     ]
 }
