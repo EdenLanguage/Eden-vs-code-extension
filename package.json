@@ -1,14 +1,24 @@
 {
-  "name": "Eden-lang-ext",
-  "displayName": "Eden",
-  "description": "Syntax highlighting for Eden",
-  "version": "0.0.1",
+  "name": "Eden-Language-VSC-Extension",
+  "displayName": "Eden Syntax Highlighting",
+  "publisher": "Dariusz-Krawczyk",
+  "description": "Syntax highlighting for Eden language",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.98.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DarekKrawczyk/Eden-lang-ext.git"
+  },
   "categories": [
     "Programming Languages"
+  ],  "keywords": [
+    "Eden",
+    "syntax highlighting",
+    "language support"
   ],
+  "icon": "assets/logo.png",
   "contributes": {
     "languages": [{
       "id": "eden",
