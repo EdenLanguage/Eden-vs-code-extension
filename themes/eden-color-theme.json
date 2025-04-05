@@ -35,7 +35,7 @@
         {
             "scope": "keyword.control.eden",
             "settings": {
-                "foreground": "#758a03",
+                "foreground": "#83eeac",
             }
         },
         {
